@@ -1,0 +1,340 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #FCFAFA;
+    scroll-behavior: smooth;
+    margin-bottom: 16px !important;
+}
+
+::selection {
+    color: #FCFAFA;
+    background-color: #100B00;
+}
+
+.navbar {
+    margin-top: 16px;
+    margin-left:30px;
+    margin-right:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.containernav {
+    width: 532px;
+    height: 73px;
+    background-color: #100B00;
+    box-shadow: 6px 6px 20px 2px rgba(30, 30, 30, 0.35); /* Applying the shadow */
+    border-radius: 23.32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out;
+    animation-name: animation;
+    animation-duration: 1s;
+    overflow: hidden;
+}
+
+.containernav:hover {
+    background-color: rgb(209, 96, 20);
+    box-shadow: 6px 6px 20px 2px rgb(209, 96, 20, 0.4);
+    scale: 0.99;
+}
+
+.navimg {
+    margin-left: 32px;
+    margin-top: 6px;
+    transition: opacity 0.3s ease-in-out;
+}
+.navimg:hover {
+    opacity: 70%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 32px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(252, 250, 250,0.70);
+}
+
+.imgcontainer1 {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--navbar-height));
+}
+
+.containerheader {
+    text-align: center;
+}
+
+.headerh {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44.2px;
+    color: rgb(16, 11, 0);
+    margin-top: 0;
+    margin-bottom: 8px;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+@keyframes animation {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.headerp {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32.11px;
+    width: 627px;
+    color: #100B00;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+button {
+    width: 281px;
+    height: 55px;
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 23.06px;
+    background-color: #100B00;
+    color: #FCFAFA;
+    border-radius: 30px;
+    border-style: none;
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
+    transition: scale 0.2s ease-in-out;
+    animation-name: animation;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(209, 96, 20);
+    box-shadow: 6px 6px 20px 2px rgb(209, 96, 20, 0.6);
+    scale: 0.99;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 150px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.workimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+.workimg:hover {
+    border-radius: 20px;
+    cursor: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23FCFAFA'/%3E%3Cpath d='M27.9926 59L20.8441 40.0076H23.7985L30.0765 57.3118H29.3643L35.6424 40.0076H38.4385L31.2636 59H27.9926ZM40.8593 59V45.547H43.6027V59H40.8593ZM40.7274 42.9092V39.8229H43.7609V42.9092H40.7274ZM53.2056 59.2638C51.8515 59.2638 50.6557 58.9648 49.6182 58.3669C48.5982 57.769 47.7981 56.9425 47.2177 55.8874C46.6374 54.8322 46.3473 53.6188 46.3473 52.2471C46.3473 50.8579 46.6286 49.6445 47.1914 48.6069C47.7717 47.5518 48.5806 46.7341 49.6182 46.1537C50.6557 45.5734 51.8428 45.2832 53.1793 45.2832C54.4806 45.2832 55.6061 45.5646 56.5557 46.1274C57.5229 46.6725 58.2615 47.4375 58.7715 48.4223C59.299 49.4071 59.5628 50.5765 59.5628 51.9306C59.5628 52.1416 59.554 52.3439 59.5364 52.5373C59.5364 52.7132 59.5189 52.8978 59.4837 53.0912H48.1937V51.0337H57.5581L56.8722 51.8515C56.8722 50.4094 56.5469 49.3103 55.8962 48.5542C55.2456 47.798 54.3399 47.4199 53.1793 47.4199C51.9307 47.4199 50.9371 47.8507 50.1985 48.7124C49.4775 49.5565 49.117 50.7348 49.117 52.2471C49.117 53.7771 49.4775 54.9729 50.1985 55.8346C50.9371 56.6963 51.9571 57.1271 53.2584 57.1271C54.0497 57.1271 54.7356 56.9689 55.3159 56.6523C55.8962 56.3182 56.3271 55.8346 56.6084 55.2015H59.1935C58.7539 56.4677 58.0065 57.4613 56.9514 58.1823C55.9138 58.9033 54.6652 59.2638 53.2056 59.2638ZM64.8554 59L60.7404 45.547H63.5629L66.359 56.3622H65.9633L69.3661 45.547H71.7402L75.143 56.3622H74.7737L77.5434 45.547H80.234L76.119 59H73.7185L70.3157 48.3695H70.7114L67.2558 59H64.8554Z' fill='%23D16014'/%3E%3C/svg%3E") 50 50, auto;
+}
+
+.h1work {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 37px;
+    padding-top: 40px;
+    padding-bottom: 7px;
+    margin: 0px;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+.pwork {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 23px;
+    color: rgb(16, 11, 0, 0.7);
+    margin: 0px;
+    padding-bottom: 22px;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+@media(min-width:768px) {
+    .h1work {
+        font-size: 33px;
+    }
+}
+
+@media(min-width:768px) {
+    .works {
+        margin-left: 58px;
+        margin-right: 58px;
+        margin-top: 90px;
+    }
+}
+
+@media(min-width:425px) {
+    .pwork {
+        font-size: 15px;
+    }
+}
+@media(max-width:425px) {
+    .h1work {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:425px) {
+    .works {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:425px) {
+    .pwork {
+        font-size: 20px;
+    }
+}
+
+footer {
+    background-color: #100B00;
+    border-radius: 28px;
+    margin-top: 90px;
+    margin-bottom: 16px;
+    margin-left: 58px;
+    margin-right: 58px;
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: background-color 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out;
+    animation-name: animation;
+    animation-duration: 1s;
+}
+
+footer:hover {
+    background-color: rgb(209, 96, 20);
+    scale: 0.99;
+}
+
+.footerimg {
+    margin-bottom: 26px;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.footerimg:hover {
+    opacity: 70%;
+}
+
+.afooter {
+    cursor: default;
+}
+
+.footer-copyright {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(252, 250, 250, 80%);
+    font-size: 17px;
+    margin-bottom: auto !important;
+}
+
+.footer-heading1 {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    color: #fcfafa;
+    font-size: 27px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.lets-talk, .contacts {
+    padding: 0;
+    margin: 0;
+}
+
+.lets-talk {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footerli {
+    font-family: "Instrument Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    color: #fcfafa;
+    font-size: 17px;
+    text-decoration: none;
+}
+.footer-center {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+.footer-right {
+    display: inline-flex; /* Make it take the width of its content */
+    flex-direction: column;
+    margin-left: auto;
+}
